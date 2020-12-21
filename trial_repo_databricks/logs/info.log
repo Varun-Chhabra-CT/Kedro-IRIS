@@ -1,0 +1,556 @@
+2020-12-16 21:42:28,769 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-16 21:42:29,062 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-16 21:42:29,068 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-16 21:42:29,800 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-16 21:42:30,304 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2020-12-16 21:47:43,946 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-16 21:47:44,297 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-16 21:47:44,325 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-16 21:47:45,895 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-16 21:47:45,961 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2020-12-16 21:48:41,780 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-16 21:48:41,897 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-16 21:48:41,902 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-16 21:48:42,084 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-16 21:48:42,146 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2020-12-16 22:27:08,009 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-16 22:27:08,864 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-16 22:27:08,870 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-16 22:27:09,692 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-16 22:27:10,030 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2020-12-17 10:36:52,331 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-17 10:36:52,773 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-17 10:36:52,786 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-17 10:36:53,317 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-17 10:37:01,339 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-17 10:37:06,297 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-17 10:37:06,298 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-17 10:37:06,299 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-17 10:37:06,299 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-17 10:37:06,303 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-17 10:37:06,332 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-17 10:37:06,332 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-17 10:37:06,334 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-17 10:37:06,337 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-17 10:37:06,338 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-17 10:37:06,338 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-17 10:37:21,934 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-17 10:37:21,935 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-17 10:37:21,936 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-17 10:37:21,936 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-17 10:37:21,941 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-17 10:37:22,078 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-17 10:37:22,079 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-17 10:37:22,080 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-17 10:37:22,083 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-17 10:37:25,159 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 97.14%
+2020-12-17 10:37:25,162 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-17 10:37:25,168 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-17 16:37:21,035 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-17 16:37:22,195 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-17 16:37:22,208 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-17 16:37:39,140 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-17 16:42:06,350 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-17 16:46:53,084 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-17 16:46:53,084 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-17 16:46:53,085 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-17 16:46:53,089 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-17 16:46:53,089 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-17 16:46:53,114 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-17 16:46:53,114 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-17 16:46:53,115 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-17 16:46:53,115 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-17 16:46:53,119 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-17 16:46:53,119 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-17 16:47:07,504 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-17 16:47:07,505 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-17 16:47:07,505 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-17 16:47:07,509 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-17 16:47:07,509 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-17 16:47:07,559 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-17 16:47:07,560 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-17 16:47:07,560 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-17 16:47:07,564 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-17 16:47:10,299 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 96.55%
+2020-12-17 16:47:10,301 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-17 16:47:10,305 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-17 16:47:55,947 - kedro.config.config - INFO - Config from path `C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks\conf\dbfs` will override the following existing top-level config keys: example_classifier, example_iris_data
+2020-12-17 16:47:56,751 - werkzeug - INFO -  * Running on http://127.0.0.1:4141/ (Press CTRL+C to quit)
+2020-12-17 16:47:57,094 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:57] "[36mGET / HTTP/1.1[0m" 304 -
+2020-12-17 16:47:57,141 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:57] "[36mGET /static/css/2.8714ff65.chunk.css HTTP/1.1[0m" 304 -
+2020-12-17 16:47:57,145 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:57] "[36mGET /static/css/main.518403eb.chunk.css HTTP/1.1[0m" 304 -
+2020-12-17 16:47:57,173 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:57] "[36mGET /static/js/main.923ff510.chunk.js HTTP/1.1[0m" 304 -
+2020-12-17 16:47:57,189 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:57] "[36mGET /static/js/2.07a96e75.chunk.js HTTP/1.1[0m" 304 -
+2020-12-17 16:47:59,956 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:59] "[37mGET /api/main HTTP/1.1[0m" 200 -
+2020-12-17 16:47:59,999 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:47:59] "[37mGET /static/media/brodyquest.6259cc84.mp3 HTTP/1.1[0m" 206 -
+2020-12-17 16:48:00,011 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:48:00] "[37mGET /api/pipelines/de HTTP/1.1[0m" 200 -
+2020-12-17 16:48:00,075 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:48:00] "[36mGET /manifest.json HTTP/1.1[0m" 304 -
+2020-12-17 16:48:07,548 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:48:07] "[37mGET /api/nodes/7fe1d536 HTTP/1.1[0m" 200 -
+2020-12-17 16:48:25,963 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:48:25] "[37mGET /api/pipelines/__default__ HTTP/1.1[0m" 200 -
+2020-12-17 16:48:51,217 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2020 16:48:51] "[37mGET /api/nodes/fbdd3b00 HTTP/1.1[0m" 200 -
+2020-12-17 17:08:46,893 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-17 17:08:47,100 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-17 17:08:47,509 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-17 17:08:48,567 - kedro.runner.sequential_runner - WARNING - There are 5 nodes that have not run.
+You can resume the pipeline run by adding the following argument to your previous command:
+
+2020-12-17 17:12:14,773 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-17 17:12:14,914 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-17 17:12:15,344 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-17 17:16:14,351 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-17 17:16:19,536 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-17 17:16:19,537 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-17 17:16:19,537 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-17 17:16:19,537 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-17 17:16:19,538 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-17 17:16:19,561 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-17 17:16:19,562 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-17 17:16:19,562 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-17 17:16:19,562 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-17 17:16:19,563 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-17 17:16:19,563 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-17 17:16:33,818 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-17 17:16:33,818 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-17 17:16:33,818 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-17 17:16:33,819 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-17 17:16:33,819 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-17 17:16:33,885 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-17 17:16:33,886 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-17 17:16:33,886 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-17 17:16:33,887 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-17 17:16:36,626 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 93.55%
+2020-12-17 17:16:36,627 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-17 17:16:36,627 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-17 20:20:53,624 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-17 20:20:53,789 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-17 20:20:54,208 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-17 20:21:06,388 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-17 20:21:11,772 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-17 20:21:11,773 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-17 20:21:11,773 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-17 20:21:11,773 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-17 20:21:11,774 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-17 20:21:11,795 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-17 20:21:11,796 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-17 20:21:11,796 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-17 20:21:11,797 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-17 20:21:11,797 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-17 20:21:11,797 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-17 20:21:26,580 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-17 20:21:26,581 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-17 20:21:26,581 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-17 20:21:26,581 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-17 20:21:26,582 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-17 20:21:26,631 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-17 20:21:26,633 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-17 20:21:26,633 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-17 20:21:26,633 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-17 20:21:29,416 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 93.75%
+2020-12-17 20:21:29,417 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-17 20:21:29,417 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-21 13:02:32,558 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-21 13:02:33,030 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-21 13:03:11,090 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 13:03:25,069 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-21 13:03:33,720 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-21 13:03:33,721 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-21 13:03:33,721 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-21 13:03:33,721 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-21 13:03:33,722 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-21 13:03:33,777 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-21 13:03:33,777 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-21 13:03:33,777 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-21 13:03:33,778 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-21 13:03:33,778 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-21 13:03:33,778 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-21 13:03:50,656 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-21 13:03:50,657 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-21 13:03:50,657 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-21 13:03:50,657 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-21 13:03:50,658 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-21 13:03:50,709 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-21 13:03:50,710 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-21 13:03:50,710 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-21 13:03:50,711 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-21 13:03:53,782 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 100.00%
+2020-12-21 13:03:53,782 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-21 13:03:53,783 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-21 13:07:40,690 - werkzeug - INFO -  * Running on http://127.0.0.1:4141/ (Press CTRL+C to quit)
+2020-12-21 13:07:41,275 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[36mGET / HTTP/1.1[0m" 304 -
+2020-12-21 13:07:41,525 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[36mGET /static/css/main.518403eb.chunk.css HTTP/1.1[0m" 304 -
+2020-12-21 13:07:41,580 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[36mGET /static/css/2.8714ff65.chunk.css HTTP/1.1[0m" 304 -
+2020-12-21 13:07:41,584 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[36mGET /static/js/main.923ff510.chunk.js HTTP/1.1[0m" 304 -
+2020-12-21 13:07:41,662 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[36mGET /static/js/2.07a96e75.chunk.js HTTP/1.1[0m" 304 -
+2020-12-21 13:07:41,898 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:41] "[37mGET /api/main HTTP/1.1[0m" 200 -
+2020-12-21 13:07:42,031 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:42] "[37mGET /static/media/brodyquest.6259cc84.mp3 HTTP/1.1[0m" 206 -
+2020-12-21 13:07:42,138 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:42] "[36mGET /manifest.json HTTP/1.1[0m" 304 -
+2020-12-21 13:07:47,130 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:47] "[37mGET /api/pipelines/ds HTTP/1.1[0m" 200 -
+2020-12-21 13:07:50,843 - werkzeug - INFO - 127.0.0.1 - - [21/Dec/2020 13:07:50] "[37mGET /api/pipelines/de HTTP/1.1[0m" 200 -
+2020-12-21 13:40:08,086 - py4j.java_gateway - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1200, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\users\varunc\.conda\envs\db-cli\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2020-12-21 13:40:08,232 - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1200, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\users\varunc\.conda\envs\db-cli\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1212, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+2020-12-21 14:34:30,036 - root - INFO - ** Kedro project Iris Databricks
+2020-12-21 14:34:30,038 - root - INFO - Defined global variable `context` and `catalog`
+2020-12-21 14:34:30,756 - root - INFO - Registered line magic `run_viz`
+2020-12-21 14:35:27,966 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 14:36:04,310 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 14:41:17,733 - py4j.java_gateway - INFO - Error while sending.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2020-12-21 14:41:17,737 - root - INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2020-12-21 14:41:19,741 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:22,298 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:24,313 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:26,334 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:28,343 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:30,355 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:32,367 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:43:41,578 - root - INFO - ** Kedro project Iris Databricks
+2020-12-21 14:43:41,581 - root - INFO - Defined global variable `context` and `catalog`
+2020-12-21 14:43:43,076 - root - INFO - Registered line magic `run_viz`
+2020-12-21 14:43:45,730 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 15:12:16,528 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 15:12:21,526 - root - INFO - ** Kedro project trial_repo_databricks
+2020-12-21 15:12:22,635 - kedro.versioning.journal - WARNING - Unable to git describe C:\Users\VarunC\AppData\Roaming\Python\Python38\Scripts\trial_repo_databricks
+2020-12-21 15:12:22,666 - kedro.io.data_catalog - INFO - Loading data from `example_iris_data` (SparkDataSet)...
+2020-12-21 15:12:23,478 - kedro.pipeline.node - INFO - Running node: transform_features([example_iris_data]) -> [transformed_data]
+2020-12-21 15:12:28,865 - kedro.io.data_catalog - INFO - Saving data to `transformed_data` (MemoryDataSet)...
+2020-12-21 15:12:28,869 - kedro.runner.sequential_runner - INFO - Completed 1 out of 5 tasks
+2020-12-21 15:12:28,871 - kedro.io.data_catalog - INFO - Loading data from `transformed_data` (MemoryDataSet)...
+2020-12-21 15:12:28,874 - kedro.io.data_catalog - INFO - Loading data from `params:example_test_data_ratio` (MemoryDataSet)...
+2020-12-21 15:12:28,876 - kedro.pipeline.node - INFO - Running node: split_data([params:example_test_data_ratio,transformed_data]) -> [testing_data,training_data]
+2020-12-21 15:12:28,931 - kedro.io.data_catalog - INFO - Saving data to `training_data` (MemoryDataSet)...
+2020-12-21 15:12:28,935 - kedro.io.data_catalog - INFO - Saving data to `testing_data` (MemoryDataSet)...
+2020-12-21 15:12:28,939 - kedro.runner.sequential_runner - INFO - Completed 2 out of 5 tasks
+2020-12-21 15:12:28,943 - kedro.io.data_catalog - INFO - Loading data from `training_data` (MemoryDataSet)...
+2020-12-21 15:12:28,946 - kedro.io.data_catalog - INFO - Loading data from `parameters` (MemoryDataSet)...
+2020-12-21 15:12:28,950 - kedro.pipeline.node - INFO - Running node: train_model([parameters,training_data]) -> [example_classifier]
+2020-12-21 15:12:45,496 - kedro.io.data_catalog - INFO - Saving data to `example_classifier` (MemoryDataSet)...
+2020-12-21 15:12:45,500 - kedro.runner.sequential_runner - INFO - Completed 3 out of 5 tasks
+2020-12-21 15:12:45,504 - kedro.io.data_catalog - INFO - Loading data from `example_classifier` (MemoryDataSet)...
+2020-12-21 15:12:45,508 - kedro.io.data_catalog - INFO - Loading data from `testing_data` (MemoryDataSet)...
+2020-12-21 15:12:45,512 - kedro.pipeline.node - INFO - Running node: predict([example_classifier,testing_data]) -> [example_predictions]
+2020-12-21 15:12:45,683 - kedro.io.data_catalog - INFO - Saving data to `example_predictions` (MemoryDataSet)...
+2020-12-21 15:12:45,688 - kedro.runner.sequential_runner - INFO - Completed 4 out of 5 tasks
+2020-12-21 15:12:45,690 - kedro.io.data_catalog - INFO - Loading data from `example_predictions` (MemoryDataSet)...
+2020-12-21 15:12:45,693 - kedro.pipeline.node - INFO - Running node: report_accuracy([example_predictions]) -> None
+2020-12-21 15:12:48,910 - python_package.pipelines.data_science.nodes - INFO - Model accuracy: 96.77%
+2020-12-21 15:12:48,919 - kedro.runner.sequential_runner - INFO - Completed 5 out of 5 tasks
+2020-12-21 15:12:48,925 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2020-12-21 15:23:21,328 - py4j.java_gateway - INFO - Error while sending.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2020-12-21 15:23:21,341 - root - INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2020-12-21 15:23:23,355 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54242)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:25,904 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54242)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:27,058 - py4j.java_gateway - INFO - Error while sending.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2020-12-21 15:23:27,069 - root - INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+2020-12-21 15:23:29,076 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:31,315 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:33,327 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:35,332 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:37,336 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:39,341 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:41,367 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:48,225 - root - INFO - ** Kedro project Iris Databricks
+2020-12-21 15:23:48,227 - root - INFO - Defined global variable `context` and `catalog`
+2020-12-21 15:23:48,958 - root - INFO - Registered line magic `run_viz`

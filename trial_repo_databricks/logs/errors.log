@@ -1,0 +1,256 @@
+2020-12-21 13:40:08,232 - root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1200, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "c:\users\varunc\.conda\envs\db-cli\lib\socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1212, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+2020-12-21 14:41:19,741 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:22,298 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:24,313 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:26,334 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:28,343 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:30,355 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 14:41:32,367 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:53937)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:23,355 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54242)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:25,904 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54242)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:29,076 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1193, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1033, in send_command
+    response = connection.send_command(command)
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1197, in send_command
+    "Error while sending", e, proto.ERROR_ON_SEND)
+py4j.protocol.Py4JNetworkError: Error while sending
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:31,315 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:33,327 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:35,332 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:37,336 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:39,341 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+2020-12-21 15:23:41,367 - py4j.java_gateway - ERROR - An error occurred while trying to connect to the Java server (127.0.0.1:54066)
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 977, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\varunc\.conda\envs\db-cli\lib\site-packages\py4j\java_gateway.py", line 1115, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it

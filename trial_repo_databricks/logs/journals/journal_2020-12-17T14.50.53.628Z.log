@@ -1,0 +1,1 @@
+{"type": "ContextJournalRecord", "run_id": "2020-12-17T14.50.53.628Z", "project_path": "C:\\Users\\VarunC\\AppData\\Roaming\\Python\\Python38\\Scripts\\trial_repo_databricks", "env": "local", "kedro_version": "0.16.6", "tags": [], "from_nodes": [], "to_nodes": [], "node_names": [], "from_inputs": [], "load_versions": {}, "pipeline_name": null, "extra_params": {}, "git_sha": null}
